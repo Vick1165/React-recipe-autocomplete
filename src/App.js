@@ -52,6 +52,7 @@ const App = () => {
           type="text"
           value={search}
           onChange={updateSearch}
+          placeholder="Enter Recipe Name"
           className="search-bar"
         />
 
@@ -59,7 +60,7 @@ const App = () => {
           Search
         </button>
       </form>
-      <div>
+      <div className="titles">
         {autoCompleteData.map(a => (
           <Autocomplete key={a.id} title={a.Name} />
         ))}

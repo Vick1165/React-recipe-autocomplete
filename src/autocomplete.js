@@ -3,7 +3,7 @@ import React from "react";
 const Autocomplete = ({ title }) => {
   return (
     <div>
-      <h1>{title}</h1>
+      <h1 className="content">{title}</h1>
     </div>
   );
 };
